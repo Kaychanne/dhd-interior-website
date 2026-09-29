@@ -1,0 +1,29 @@
+.banner {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--color-bg-light);
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.btnGold {
+  display: inline-block;
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}

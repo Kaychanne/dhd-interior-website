@@ -1,0 +1,102 @@
+/* Styling Utama (Desktop) milikmu */
+.projects {
+  padding: 80px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--color-navy);
+  border-bottom: 3px solid var(--color-gold);
+  display: inline-block;
+}
+
+.linkMore {
+  font-size: 0.85rem;
+  color: var(--color-navy);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.imagePlaceholder {
+  height: 180px;
+  background-color: #E5E7EB;
+}
+
+.cardInfo {
+  padding: 16px;
+}
+
+.cardInfo h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.cardInfo p {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+
+@media (max-width: 1024px) {
+  .projects {
+    padding: 60px 40px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .projects {
+    padding: 40px 20px; 
+  }
+
+  .header {
+    margin-bottom: 24px;
+  }
+
+  .sectionTitle {
+    font-size: 1rem; 
+  }
+
+  .linkMore {
+    font-size: 0.75rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; 
+    gap: 16px;
+  }
+
+  .imagePlaceholder {
+    height: 200px; 
+  }
+}

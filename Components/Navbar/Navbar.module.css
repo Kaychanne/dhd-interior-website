@@ -1,0 +1,174 @@
+/* Header Utama (Desktop) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: var(--color-bg-light, #ffffff);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-navy, #0f172a);
+}
+
+.logoBold {
+  font-weight: 800;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  color: var(--color-navy, #0f172a);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--color-gold, #f59e0b);
+}
+
+.nav a.activeLink {
+  color: var(--color-gold, #f59e0b) !important;
+  font-weight: 800 !important;
+}
+
+.desktopConsultation {
+  display: block;
+}
+
+.btnConsultation {
+  background-color: var(--color-navy, #0f172a);
+  color: var(--color-white, #ffffff);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+.btnConsultation:hover {
+  background-color: #1e293b;
+}
+
+/* IMPORTANT: Sembunyikan elemen mobile secara mutlak di tampilan Desktop */
+.hamburgerBtn,
+.sidebar,
+.overlay {
+  display: none !important;
+}
+
+/* ==========================================
+   PENYESUAIAN KHUSUS KHUSUS MOBILE (RESPONSIVE)
+   ========================================== */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  /* Sembunyikan Navigasi Desktop & Tombol Konsultasi Desktop di Layar HP */
+  .nav,
+  .desktopConsultation {
+    display: none !important;
+  }
+
+  /* Tampilkan Tombol Hamburger di Mobile */
+  .hamburgerBtn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: var(--color-navy, #0f172a);
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  /* Overlay Background Gelap saat Sidebar Buka */
+  .overlay {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+  }
+
+  /* Sidebar Melayang saat Buka di Mobile */
+  .sidebar {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -280px;
+    width: 280px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 300;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+  }
+
+  /* Saat Terbuka di Mobile */
+  .sidebarOpen {
+    right: 0 !important;
+  }
+
+  .sidebarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .closeBtn {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+  }
+
+  .sidebarNav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  .sidebarNav a {
+    color: var(--color-navy, #0f172a);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .sidebarNav a:hover,
+  .sidebarNav a.activeLink {
+    color: var(--color-gold, #f59e0b) !important;
+  }
+
+  .sidebarFooter {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+  }
+}

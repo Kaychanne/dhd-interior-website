@@ -1,0 +1,55 @@
+.services {
+  padding: 80px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--color-navy);
+  border-bottom: 3px solid var(--color-gold);
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  text-align: center;
+}
+
+.imagePlaceholder {
+  height: 320px;
+  background-color: #D1D5DB;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.number {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--color-navy);
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+.cardDesc {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}

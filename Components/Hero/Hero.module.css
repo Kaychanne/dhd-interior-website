@@ -1,0 +1,48 @@
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: var(--color-bg-light);
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--color-navy);
+  margin-bottom: 20px;
+}
+
+.titleGold {
+  color: var(--color-gold);
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+}
+
+.ctaGroup {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btnDark {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.btnGold {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
